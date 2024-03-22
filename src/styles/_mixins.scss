@@ -1,0 +1,50 @@
+@mixin title {
+  color: $black;
+  font-family: $side-ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  @include laptop {
+    font-size: 38px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+@mixin paragraph {
+  color: $black;
+  font-family: $main-ff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+
+@mixin section-padding {
+  padding: 0 28px;
+
+  @include laptop {
+    padding: 0 24px;
+  }
+
+  @include tablet {
+    padding: 0 18px;
+  }
+}

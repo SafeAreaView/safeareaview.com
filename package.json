@@ -1,0 +1,39 @@
+{
+  "name": "webpack_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_MODE=production NODE_OPTIONS=--openssl-legacy-provider webpack-cli --mode development",
+    "watch": "cross-env NODE_MODE=development NODE_OPTIONS=--openssl-legacy-provider webpack-cli --mode development --watch",
+    "dev": "cross-env NODE_MODE=development NODE_OPTIONS=--openssl-legacy-provider DEV_SERVER_PORT=3000 webpack serve"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "critical": "^5.1.1",
+    "critical-css-webpack-plugin": "^3.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "immutable-css": "^1.1.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "stylelint": "^15.10.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "sass": "^1.64.2"
+  }
+}

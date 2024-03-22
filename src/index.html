@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow">
+  <title>SafeAreaView - Studio</title>
+
+  <meta name="description" content="SafeAreaView - Studio Description">
+  <meta name="keywords" content="keywords">
+  <meta name="author" content="SafeAreaView">
+
+  <meta property="og:title" content="SafeAreaView - Studio">
+  <meta property="og:description" content="SafeAreaView - Studio Description">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://SafeAreaView.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+
+
+  <meta name="twitter:title" content="SafeAreaView - Studio">
+  <meta name="twitter:description" content="SafeAreaView - Studio Description">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://SafeAreaView.com">
+  <!-- <link rel="alternate" hreflang="en" href=""> -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#876af7">
+  <meta name="msapplication-TileColor" content="#876af7">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="layout">
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__icon" src="./assets/images/logo.png" alt="SafeAreaView - Studio Logotype" />
+        <h2 class="header__font header__font--logo">SafeAreaView - STUDIO</h2>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list--link"><a class="header__font header__font--link" href="#">Home</a></li>
+          <li class="header__list--link"><a class="header__font header__font--link" href="#">About</a></li>
+          <li class="header__list--link"><a class="header__font header__font--link" href="#">Portfolio</a></li>
+          <li class="header__list--link"><a class="header__font header__font--link" href="#">Contact</a></li>
+          <li class="header__list--link"><a class="header__font header__font--link" href="#">Collaboration</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger-button header__burger-button--open"><svg width="30" height="30" viewBox="0 0 53 38"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 6H46" stroke="white" />
+          <path d="M7 19H46" stroke="white" />
+          <path d="M7 31H46" stroke="white" />
+        </svg>
+      </button>
+    </header>
+    <div class="header-burger">
+      <button class="header__burger-button header__burger-button--close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.947777 21.6191C0.671534 21.8897 0.666856 22.3328 0.937328 22.609C1.2078 22.8851 1.651 22.8897 1.92724 22.6191L11.8544 12.8965L21.8577 23.0539C22.129 23.3293 22.5722 23.3326 22.8477 23.0613C23.1232 22.79 23.1267 22.3468 22.8554 22.0714L12.8547 11.9167L23.0443 1.93696C23.3206 1.66641 23.3253 1.22323 23.0548 0.947086C22.7843 0.670943 22.3411 0.666414 22.0649 0.936965L11.8725 10.9194L2.11604 1.01263C1.84482 0.737227 1.4016 0.733906 1.1261 1.00521C0.850598 1.27652 0.847129 1.71971 1.11835 1.99511L10.8722 11.8991L0.947777 21.6191Z"
+            fill="#fff" />
+        </svg>
+
+      </button>
+      <ul class="header__list header__list--mobile">
+        <li class="header__list--link"><a class="header__font header__font--link" href="#">Home</a></li>
+        <li class="header__list--link"><a class="header__font header__font--link" href="#">About</a></li>
+        <li class="header__list--link"><a class="header__font header__font--link" href="#">Portfolio</a></li>
+        <li class="header__list--link"><a class="header__font header__font--link" href="#">Contact</a></li>
+        <li class="header__list--link"><a class="header__font header__font--link" href="#">Collaboration</a></li>
+      </ul>
+    </div>
+
+
+    <div class="container">
+      <main class="main">
+        <section class="layout__intro">
+          <h1 class="title">Welcome to SafeAreaView - Studio</h1>
+          <h2 class="subtitle">Crafting Digital Experiences That Inspire</h2>
+          <img class="banner-img" src="./assets/images/intro.webp" alt="Main banner Studio Intro">
+          <p class="description">At SafeAreaView - Studio, we specialize in creating captivating websites that stand out
+            in the digital landscape. With a keen eye for design and a focus on user experience, we bring your vision to
+            life. Whether you're a small business looking to establish an online presence or a corporation seeking to
+            revamp your website, we've got you covered. Let's collaborate and turn your ideas into reality.</p>
+          <a href="#" class="btn btn--primary">Get Started</a>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script>
+    const openButton = document.querySelector('.header__burger-button--open');
+    const closeButton = document.querySelector('.header__burger-button--close');
+    const menu = document.querySelector('.header-burger');
+
+    openButton.addEventListener('click', function () {
+      menu.style.right = '0';
+    });
+
+    closeButton.addEventListener('click', function () {
+      menu.style.right = '-100%';
+    });
+  </script>
+</body>
+
+
+</html>

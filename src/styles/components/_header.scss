@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  height: 70px;
+  background-color: #333;
+  color: $white;
+  padding: 1rem 1rem;
+  text-align: center;
+
+
+  &__logo {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__nav {
+    @include mobile() {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    display: flex;
+    gap: 15px;
+
+    &--mobile {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+  }
+
+
+  &__font {
+    &--logo {
+      font-size: 28px;
+      font-family: $side-ff;
+      text-transform: uppercase;
+    }
+
+    &--link {
+      font-family: $side-ff;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+
+      text-decoration: none;
+      border-bottom: 1px solid $white;
+
+      transition: all 0.3s;
+
+      &:hover {
+        padding: 0px 0px 2px 0px;
+        border-bottom: 1px solid #F28705;
+      }
+    }
+  }
+
+  &-burger {
+    display: none;
+    transition: all 0.3s ease;
+
+    @include mobile() {
+      // display: block;
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100dvw;
+      height: 100dvh;
+      background-color: #333;
+      display: block;
+    }
+  }
+
+  &__burger-button {
+    display: none;
+
+    @include mobile() {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+
+    &--open {
+      width: 30px;
+      height: 30px;
+    }
+
+    &--close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      background-color: transparent;
+      border: none;
+
+      background-image: url("../../assets/svg/close.svg");
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
